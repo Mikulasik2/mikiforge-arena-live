@@ -1,0 +1,58 @@
+{
+  "title": "MikiForge AI Trading Arena",
+  "kind": "public_paper_simulation",
+  "status": "RUNNING",
+  "started_utc": "2026-11-15T17:52:22+00:00",
+  "ends_utc": "2026-12-15T17:52:22+00:00",
+  "updated_utc": "2026-11-15T17:52:22+00:00",
+  "market": {
+    "symbol": "BTCUSD",
+    "source": "kraken_futures:PF_XBTUSD",
+    "price": 64668.0,
+    "closed_bar": "2026-11-15T16:00:00+00:00"
+  },
+  "agents": [
+    {
+      "id": "gpt",
+      "name": "GPT-5 mini",
+      "equity": 10000.0,
+      "return_pct": 0.0,
+      "halted": false,
+      "closed_trades": 0,
+      "position": null,
+      "curve": [
+        {
+          "time": "2026-11-15T16:00:00+00:00",
+          "equity": 10000.0
+        }
+      ],
+      "api": {
+        "requests": 0,
+        "reserved_usd": 0,
+        "estimated_usd": 0
+      }
+    },
+    {
+      "id": "claude",
+      "name": "Claude Haiku 4.5",
+      "equity": 10000.0,
+      "return_pct": 0.0,
+      "halted": false,
+      "closed_trades": 0,
+      "position": null,
+      "curve": [
+        {
+          "time": "2026-11-15T16:00:00+00:00",
+          "equity": 10000.0
+        }
+      ],
+      "api": {
+        "requests": 0,
+        "reserved_usd": 0,
+        "estimated_usd": 0
+      }
+    }
+  ],
+  "decisions": [],
+  "trades": []
+}
