@@ -4,22 +4,29 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-16T09:21:15+00:00",
+  "updated_utc": "2026-11-16T16:19:39+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 64405.0,
-    "closed_bar": "2026-11-16T08:00:00+00:00"
+    "price": 64409.0,
+    "closed_bar": "2026-11-16T15:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10000.0,
-      "return_pct": 0.0,
+      "equity": 9997.083163,
+      "return_pct": -0.029,
       "halted": false,
       "closed_trades": 0,
-      "position": null,
+      "position": {
+        "side": "SHORT",
+        "entry": 64396.1182,
+        "stop": 65168.871618,
+        "take": 62850.611363,
+        "qty": 0.064704,
+        "opened_at": "2026-11-16T15:00:00+00:00"
+      },
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -88,22 +95,57 @@
         {
           "time": "2026-11-16T08:00:00+00:00",
           "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T09:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T10:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T11:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T12:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T13:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T14:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T15:00:00+00:00",
+          "equity": 10000.0
         }
       ],
       "api": {
-        "requests": 0,
-        "reserved_usd": 0,
-        "estimated_usd": 0
+        "requests": 1,
+        "reserved_usd": 0.003125,
+        "estimated_usd": 0.002017
       }
     },
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 10000.0,
-      "return_pct": 0.0,
+      "equity": 9997.666803,
+      "return_pct": -0.023,
       "halted": false,
       "closed_trades": 0,
-      "position": null,
+      "position": {
+        "side": "LONG",
+        "entry": 64421.8818,
+        "stop": 63455.553573,
+        "take": 69575.632344,
+        "qty": 0.051742,
+        "opened_at": "2026-11-16T15:00:00+00:00"
+      },
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -172,15 +214,66 @@
         {
           "time": "2026-11-16T08:00:00+00:00",
           "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T09:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T10:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T11:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T12:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T13:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T14:00:00+00:00",
+          "equity": 10000.0
+        },
+        {
+          "time": "2026-11-16T15:00:00+00:00",
+          "equity": 10000.0
         }
       ],
       "api": {
-        "requests": 0,
-        "reserved_usd": 0,
-        "estimated_usd": 0
+        "requests": 1,
+        "reserved_usd": 0.01025,
+        "estimated_usd": 0.002605
       }
     }
   ],
-  "decisions": [],
+  "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-16T16:19:39+00:00",
+      "bar": "2026-11-16T15:00:00+00:00",
+      "action": "LONG",
+      "status": "AI_RESPONSE",
+      "reason": "Strong bullish spike at 14:00 (65648 high) followed by consolidation. Price near 64409 offers risk/reward setup. Volume elevated suggesting institutional interest.",
+      "stop_pct": 0.015,
+      "take_pct": 0.08,
+      "reference_price": 64409.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-16T16:19:39+00:00",
+      "bar": "2026-11-16T15:00:00+00:00",
+      "action": "SHORT",
+      "status": "AI_RESPONSE",
+      "reason": "Bearish reversal: failed to sustain ~65k after large-volume spike; last hourly closed near low with high volume, momentum turning down.",
+      "stop_pct": 0.012,
+      "take_pct": 0.024,
+      "reference_price": 64409.0
+    }
+  ],
   "trades": []
 }
