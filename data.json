@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-17T16:31:01+00:00",
+  "updated_utc": "2026-11-17T23:40:27+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 64048.0,
-    "closed_bar": "2026-11-17T15:00:00+00:00"
+    "price": 64658.0,
+    "closed_bar": "2026-11-17T22:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 9943.447393,
-      "return_pct": -0.566,
+      "equity": 9917.407089,
+      "return_pct": -0.826,
       "halted": false,
       "closed_trades": 1,
       "position": {
@@ -219,22 +219,57 @@
         {
           "time": "2026-11-17T15:00:00+00:00",
           "equity": 9945.3813
+        },
+        {
+          "time": "2026-11-17T16:00:00+00:00",
+          "equity": 9959.3411
+        },
+        {
+          "time": "2026-11-17T17:00:00+00:00",
+          "equity": 9955.976
+        },
+        {
+          "time": "2026-11-17T18:00:00+00:00",
+          "equity": 9958.5646
+        },
+        {
+          "time": "2026-11-17T19:00:00+00:00",
+          "equity": 9959.4705
+        },
+        {
+          "time": "2026-11-17T20:00:00+00:00",
+          "equity": 9949.3322
+        },
+        {
+          "time": "2026-11-17T21:00:00+00:00",
+          "equity": 9933.0676
+        },
+        {
+          "time": "2026-11-17T22:00:00+00:00",
+          "equity": 9917.4071
         }
       ],
       "api": {
-        "requests": 3,
-        "reserved_usd": 0.009375,
+        "requests": 4,
+        "reserved_usd": 0.0125,
         "estimated_usd": 0.003695
       }
     },
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9945.032015,
-      "return_pct": -0.55,
+      "equity": 9942.711636,
+      "return_pct": -0.573,
       "halted": false,
       "closed_trades": 1,
-      "position": null,
+      "position": {
+        "side": "LONG",
+        "entry": 64670.9316,
+        "stop": 63700.867626,
+        "take": 66287.70489,
+        "qty": 0.05126,
+        "opened_at": "2026-11-17T22:00:00+00:00"
+      },
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -427,16 +462,66 @@
         {
           "time": "2026-11-17T15:00:00+00:00",
           "equity": 9945.032
+        },
+        {
+          "time": "2026-11-17T16:00:00+00:00",
+          "equity": 9945.032
+        },
+        {
+          "time": "2026-11-17T17:00:00+00:00",
+          "equity": 9945.032
+        },
+        {
+          "time": "2026-11-17T18:00:00+00:00",
+          "equity": 9945.032
+        },
+        {
+          "time": "2026-11-17T19:00:00+00:00",
+          "equity": 9945.032
+        },
+        {
+          "time": "2026-11-17T20:00:00+00:00",
+          "equity": 9945.032
+        },
+        {
+          "time": "2026-11-17T21:00:00+00:00",
+          "equity": 9945.032
+        },
+        {
+          "time": "2026-11-17T22:00:00+00:00",
+          "equity": 9945.032
         }
       ],
       "api": {
-        "requests": 3,
-        "reserved_usd": 0.03075,
-        "estimated_usd": 0.008011
+        "requests": 4,
+        "reserved_usd": 0.041,
+        "estimated_usd": 0.010651
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-17T23:40:27+00:00",
+      "bar": "2026-11-17T22:00:00+00:00",
+      "action": "LONG",
+      "status": "AI_RESPONSE",
+      "reason": "Price rejected lower support (63390) with recovery to 64658. Recent volume spike and upward momentum from 21:00 bar suggest bullish reversal. Last loss indicates readiness for setu",
+      "stop_pct": 0.015,
+      "take_pct": 0.025,
+      "reference_price": 64658.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-17T23:40:27+00:00",
+      "bar": "2026-11-17T22:00:00+00:00",
+      "action": "HOLD",
+      "status": "API_ERROR",
+      "reason": "API error; fail closed",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 64658.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-17T16:31:01+00:00",
