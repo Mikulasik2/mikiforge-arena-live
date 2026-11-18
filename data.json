@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-18T13:30:33+00:00",
+  "updated_utc": "2026-11-18T21:38:20+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 64014.0,
-    "closed_bar": "2026-11-18T12:00:00+00:00"
+    "price": 62554.0,
+    "closed_bar": "2026-11-18T20:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 9889.117923,
-      "return_pct": -1.109,
+      "equity": 10002.439895,
+      "return_pct": 0.024,
       "halted": false,
       "closed_trades": 2,
       "position": {
@@ -303,11 +303,43 @@
         {
           "time": "2026-11-18T12:00:00+00:00",
           "equity": 9892.5805
+        },
+        {
+          "time": "2026-11-18T13:00:00+00:00",
+          "equity": 9900.7106
+        },
+        {
+          "time": "2026-11-18T14:00:00+00:00",
+          "equity": 9920.4954
+        },
+        {
+          "time": "2026-11-18T15:00:00+00:00",
+          "equity": 9963.079
+        },
+        {
+          "time": "2026-11-18T16:00:00+00:00",
+          "equity": 9991.466
+        },
+        {
+          "time": "2026-11-18T17:00:00+00:00",
+          "equity": 9965.1121
+        },
+        {
+          "time": "2026-11-18T18:00:00+00:00",
+          "equity": 9959.5476
+        },
+        {
+          "time": "2026-11-18T19:00:00+00:00",
+          "equity": 9993.7073
+        },
+        {
+          "time": "2026-11-18T20:00:00+00:00",
+          "equity": 10002.4404
         }
       ],
       "api": {
-        "requests": 6,
-        "reserved_usd": 0.01875,
+        "requests": 7,
+        "reserved_usd": 0.021875,
         "estimated_usd": 0.007173
       }
     },
@@ -595,16 +627,70 @@
         {
           "time": "2026-11-18T12:00:00+00:00",
           "equity": 9909.0356
+        },
+        {
+          "time": "2026-11-18T13:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-18T14:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-18T15:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-18T16:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-18T17:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-18T18:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-18T19:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-18T20:00:00+00:00",
+          "equity": 9906.739
         }
       ],
       "api": {
-        "requests": 6,
-        "reserved_usd": 0.0615,
-        "estimated_usd": 0.016178
+        "requests": 7,
+        "reserved_usd": 0.07175,
+        "estimated_usd": 0.018893
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-18T21:38:20+00:00",
+      "bar": "2026-11-18T20:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Price declined from 64280 to 62554 (-2.7%) over recent bars showing downtrend. Last 2 trades were losing LONGs. Volatility elevated with large wicks. Wait for reversal confirmation",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 62554.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-18T21:38:20+00:00",
+      "bar": "2026-11-18T20:00:00+00:00",
+      "action": "HOLD",
+      "status": "API_ERROR",
+      "reason": "API error; fail closed",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 62554.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-18T13:30:33+00:00",
