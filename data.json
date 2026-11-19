@@ -4,28 +4,28 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-19T10:47:50+00:00",
+  "updated_utc": "2026-11-19T18:52:47+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 63795.0,
-    "closed_bar": "2026-11-19T09:00:00+00:00"
+    "price": 62679.0,
+    "closed_bar": "2026-11-19T17:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 9979.067709,
-      "return_pct": -0.209,
+      "equity": 9925.794868,
+      "return_pct": -0.742,
       "halted": false,
-      "closed_trades": 4,
+      "closed_trades": 5,
       "position": {
-        "side": "LONG",
-        "entry": 63807.759,
-        "stop": 62850.642615,
-        "take": 67636.22454,
-        "qty": 0.052143,
-        "opened_at": "2026-11-19T09:00:00+00:00"
+        "side": "SHORT",
+        "entry": 62666.4642,
+        "stop": 63919.793484,
+        "take": 60159.805632,
+        "qty": 0.039605,
+        "opened_at": "2026-11-19T17:00:00+00:00"
       },
       "curve": [
         {
@@ -387,29 +387,54 @@
         {
           "time": "2026-11-19T09:00:00+00:00",
           "equity": 9981.3966
+        },
+        {
+          "time": "2026-11-19T10:00:00+00:00",
+          "equity": 9975.157
+        },
+        {
+          "time": "2026-11-19T11:00:00+00:00",
+          "equity": 9983.4999
+        },
+        {
+          "time": "2026-11-19T12:00:00+00:00",
+          "equity": 9979.8499
+        },
+        {
+          "time": "2026-11-19T13:00:00+00:00",
+          "equity": 9988.3492
+        },
+        {
+          "time": "2026-11-19T14:00:00+00:00",
+          "equity": 9962.9034
+        },
+        {
+          "time": "2026-11-19T15:00:00+00:00",
+          "equity": 9927.5323
+        },
+        {
+          "time": "2026-11-19T16:00:00+00:00",
+          "equity": 9927.5323
+        },
+        {
+          "time": "2026-11-19T17:00:00+00:00",
+          "equity": 9927.5323
         }
       ],
       "api": {
-        "requests": 9,
-        "reserved_usd": 0.028125,
-        "estimated_usd": 0.010523
+        "requests": 10,
+        "reserved_usd": 0.03125,
+        "estimated_usd": 0.012236
       }
     },
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9904.427542,
-      "return_pct": -0.956,
+      "equity": 9853.27759,
+      "return_pct": -1.467,
       "halted": false,
-      "closed_trades": 2,
-      "position": {
-        "side": "LONG",
-        "entry": 63807.759,
-        "stop": 62850.642615,
-        "take": 66679.108155,
-        "qty": 0.051753,
-        "opened_at": "2026-11-19T09:00:00+00:00"
-      },
+      "closed_trades": 3,
+      "position": null,
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -770,16 +795,70 @@
         {
           "time": "2026-11-19T09:00:00+00:00",
           "equity": 9906.739
+        },
+        {
+          "time": "2026-11-19T10:00:00+00:00",
+          "equity": 9900.5461
+        },
+        {
+          "time": "2026-11-19T11:00:00+00:00",
+          "equity": 9908.8266
+        },
+        {
+          "time": "2026-11-19T12:00:00+00:00",
+          "equity": 9905.2038
+        },
+        {
+          "time": "2026-11-19T13:00:00+00:00",
+          "equity": 9913.6396
+        },
+        {
+          "time": "2026-11-19T14:00:00+00:00",
+          "equity": 9888.3841
+        },
+        {
+          "time": "2026-11-19T15:00:00+00:00",
+          "equity": 9853.2776
+        },
+        {
+          "time": "2026-11-19T16:00:00+00:00",
+          "equity": 9853.2776
+        },
+        {
+          "time": "2026-11-19T17:00:00+00:00",
+          "equity": 9853.2776
         }
       ],
       "api": {
-        "requests": 9,
-        "reserved_usd": 0.09225,
-        "estimated_usd": 0.024267
+        "requests": 10,
+        "reserved_usd": 0.1025,
+        "estimated_usd": 0.027031
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-19T18:52:47+00:00",
+      "bar": "2026-11-19T17:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Price trapped in 62163-63973 range after downtrend from 64603. Recent bars show weak recovery with high volume selling (595k at close). Last 3 trades all losses. Wait for clear bre",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 62679.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-19T18:52:47+00:00",
+      "bar": "2026-11-19T17:00:00+00:00",
+      "action": "SHORT",
+      "status": "AI_RESPONSE",
+      "reason": "Last 4 hourly closes are lower with a large sell-volume spike at the final close — momentum favors downside, open short.",
+      "stop_pct": 0.02,
+      "take_pct": 0.04,
+      "reference_price": 62679.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-19T10:47:50+00:00",
@@ -980,6 +1059,26 @@
     }
   ],
   "trades": [
+    {
+      "agent": "gpt",
+      "side": "LONG",
+      "open_time": "2026-11-19T09:00:00+00:00",
+      "close_time": "2026-11-19T15:00:00+00:00",
+      "entry": 63807.759,
+      "exit": 62838.072486,
+      "net_pnl": -53.864279,
+      "reason": "STOP"
+    },
+    {
+      "agent": "claude",
+      "side": "LONG",
+      "open_time": "2026-11-19T09:00:00+00:00",
+      "close_time": "2026-11-19T15:00:00+00:00",
+      "entry": 63807.759,
+      "exit": 62838.072486,
+      "net_pnl": -53.461392,
+      "reason": "STOP"
+    },
     {
       "agent": "gpt",
       "side": "SHORT",
