@@ -4,28 +4,28 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-18T21:38:20+00:00",
+  "updated_utc": "2026-11-19T02:51:09+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 62554.0,
-    "closed_bar": "2026-11-18T20:00:00+00:00"
+    "price": 62788.0,
+    "closed_bar": "2026-11-19T01:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10002.439895,
-      "return_pct": 0.024,
+      "equity": 10033.282631,
+      "return_pct": 0.333,
       "halted": false,
-      "closed_trades": 2,
+      "closed_trades": 3,
       "position": {
         "side": "SHORT",
-        "entry": 64001.1972,
-        "stop": 64641.209172,
-        "take": 62081.161284,
-        "qty": 0.077284,
-        "opened_at": "2026-11-18T12:00:00+00:00"
+        "entry": 62775.4424,
+        "stop": 63717.074036,
+        "take": 59008.915856,
+        "qty": 0.053288,
+        "opened_at": "2026-11-19T01:00:00+00:00"
       },
       "curve": [
         {
@@ -335,12 +335,32 @@
         {
           "time": "2026-11-18T20:00:00+00:00",
           "equity": 10002.4404
+        },
+        {
+          "time": "2026-11-18T21:00:00+00:00",
+          "equity": 10024.6983
+        },
+        {
+          "time": "2026-11-18T22:00:00+00:00",
+          "equity": 10035.6244
+        },
+        {
+          "time": "2026-11-18T23:00:00+00:00",
+          "equity": 10035.6244
+        },
+        {
+          "time": "2026-11-19T00:00:00+00:00",
+          "equity": 10035.6244
+        },
+        {
+          "time": "2026-11-19T01:00:00+00:00",
+          "equity": 10035.6244
         }
       ],
       "api": {
-        "requests": 7,
-        "reserved_usd": 0.021875,
-        "estimated_usd": 0.007173
+        "requests": 8,
+        "reserved_usd": 0.025,
+        "estimated_usd": 0.00885
       }
     },
     {
@@ -659,16 +679,58 @@
         {
           "time": "2026-11-18T20:00:00+00:00",
           "equity": 9906.739
+        },
+        {
+          "time": "2026-11-18T21:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-18T22:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-18T23:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-19T00:00:00+00:00",
+          "equity": 9906.739
+        },
+        {
+          "time": "2026-11-19T01:00:00+00:00",
+          "equity": 9906.739
         }
       ],
       "api": {
-        "requests": 7,
-        "reserved_usd": 0.07175,
-        "estimated_usd": 0.018893
+        "requests": 8,
+        "reserved_usd": 0.082,
+        "estimated_usd": 0.021608
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-19T02:51:09+00:00",
+      "bar": "2026-11-19T01:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Price declined from 65091 to 62788 (-3.5%) over past 36 hours. Recent trades show consecutive losses. Market shows downtrend with lower highs and lower lows. Wait for stabilization",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 62788.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-19T02:51:09+00:00",
+      "bar": "2026-11-19T01:00:00+00:00",
+      "action": "SHORT",
+      "status": "AI_RESPONSE",
+      "reason": "Lower highs/lows on hourly, recent failed bounce and close below ~62.9k support; momentum favors continuation downward.",
+      "stop_pct": 0.015,
+      "take_pct": 0.06,
+      "reference_price": 62788.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-18T21:38:20+00:00",
@@ -825,6 +887,16 @@
     }
   ],
   "trades": [
+    {
+      "agent": "gpt",
+      "side": "SHORT",
+      "open_time": "2026-11-18T12:00:00+00:00",
+      "close_time": "2026-11-18T22:00:00+00:00",
+      "entry": 64001.1972,
+      "exit": 62093.577516,
+      "net_pnl": 142.556552,
+      "reason": "TAKE"
+    },
     {
       "agent": "claude",
       "side": "LONG",
