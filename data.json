@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-20T07:52:49+00:00",
+  "updated_utc": "2026-11-20T08:52:51+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 61996.0,
-    "closed_bar": "2026-11-20T06:00:00+00:00"
+    "price": 61790.0,
+    "closed_bar": "2026-11-20T07:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 9953.090315,
-      "return_pct": -0.469,
+      "equity": 9961.248945,
+      "return_pct": -0.388,
       "halted": false,
       "closed_trades": 5,
       "position": {
@@ -471,11 +471,15 @@
         {
           "time": "2026-11-20T06:00:00+00:00",
           "equity": 9953.0901
+        },
+        {
+          "time": "2026-11-20T07:00:00+00:00",
+          "equity": 9961.2486
         }
       ],
       "api": {
-        "requests": 13,
-        "reserved_usd": 0.040625,
+        "requests": 14,
+        "reserved_usd": 0.04375,
         "estimated_usd": 0.012236
       }
     },
@@ -931,16 +935,42 @@
         {
           "time": "2026-11-20T06:00:00+00:00",
           "equity": 9853.2776
+        },
+        {
+          "time": "2026-11-20T07:00:00+00:00",
+          "equity": 9853.2776
         }
       ],
       "api": {
-        "requests": 13,
-        "reserved_usd": 0.13325,
-        "estimated_usd": 0.035183
+        "requests": 14,
+        "reserved_usd": 0.1435,
+        "estimated_usd": 0.038017
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-20T08:52:51+00:00",
+      "bar": "2026-11-20T07:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Price declined from 63973 (Nov 19, 13:00) to 61790 (Nov 20, 07:00), losing 2.5% in recent hours. High volatility with large wicks and increased volume. Last 3 trades were losses. N",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 61790.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-20T08:52:51+00:00",
+      "bar": "2026-11-20T07:00:00+00:00",
+      "action": "HOLD",
+      "status": "API_ERROR",
+      "reason": "API error; fail closed",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 61790.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-20T04:52:47+00:00",
