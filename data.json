@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-21T15:52:47+00:00",
+  "updated_utc": "2026-11-21T16:52:53+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 60239.0,
-    "closed_bar": "2026-11-21T14:00:00+00:00"
+    "price": 59832.0,
+    "closed_bar": "2026-11-21T15:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10263.497964,
-      "return_pct": 2.635,
+      "equity": 10245.691307,
+      "return_pct": 2.457,
       "halted": false,
       "closed_trades": 7,
       "position": {
@@ -599,29 +599,26 @@
         {
           "time": "2026-11-21T14:00:00+00:00",
           "equity": 10263.4976
+        },
+        {
+          "time": "2026-11-21T15:00:00+00:00",
+          "equity": 10245.691
         }
       ],
       "api": {
-        "requests": 21,
-        "reserved_usd": 0.065625,
+        "requests": 22,
+        "reserved_usd": 0.06875,
         "estimated_usd": 0.01571
       }
     },
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9932.001549,
-      "return_pct": -0.68,
+      "equity": 9916.722658,
+      "return_pct": -0.833,
       "halted": false,
-      "closed_trades": 3,
-      "position": {
-        "side": "LONG",
-        "entry": 57891.576,
-        "stop": 56444.2866,
-        "take": 62522.90208,
-        "qty": 0.03404,
-        "opened_at": "2026-11-21T07:00:00+00:00"
-      },
+      "closed_trades": 4,
+      "position": null,
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -1194,16 +1191,42 @@
         {
           "time": "2026-11-21T14:00:00+00:00",
           "equity": 9932.0026
+        },
+        {
+          "time": "2026-11-21T15:00:00+00:00",
+          "equity": 9918.1481
         }
       ],
       "api": {
-        "requests": 21,
-        "reserved_usd": 0.21525,
-        "estimated_usd": 0.057259
+        "requests": 22,
+        "reserved_usd": 0.2255,
+        "estimated_usd": 0.059986
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-21T16:52:53+00:00",
+      "bar": "2026-11-21T15:00:00+00:00",
+      "action": "CLOSE",
+      "status": "AI_RESPONSE",
+      "reason": "Price at 59832 is below take profit 62522.9. Recent bars show weak recovery after double crash (61702→59411→56622). Three consecutive losses signal poor strategy fit. Close to lock",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59832.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-21T16:52:53+00:00",
+      "bar": "2026-11-21T15:00:00+00:00",
+      "action": "HOLD",
+      "status": "API_ERROR",
+      "reason": "API error; fail closed",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59832.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-21T12:52:47+00:00",
@@ -1668,6 +1691,16 @@
     }
   ],
   "trades": [
+    {
+      "agent": "claude",
+      "side": "LONG",
+      "open_time": "2026-11-21T07:00:00+00:00",
+      "close_time": "2026-11-21T15:00:00+00:00",
+      "entry": 57891.576,
+      "exit": 59820.0336,
+      "net_pnl": 63.642094,
+      "reason": "AGENT_CLOSE"
+    },
     {
       "agent": "gpt",
       "side": "SHORT",
