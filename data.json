@@ -4,12 +4,12 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-21T07:52:49+00:00",
+  "updated_utc": "2026-11-21T08:52:47+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 57960.0,
-    "closed_bar": "2026-11-21T06:00:00+00:00"
+    "price": 57880.0,
+    "closed_bar": "2026-11-21T07:00:00+00:00"
   },
   "agents": [
     {
@@ -560,22 +560,33 @@
         {
           "time": "2026-11-21T06:00:00+00:00",
           "equity": 10172.3509
+        },
+        {
+          "time": "2026-11-21T07:00:00+00:00",
+          "equity": 10172.3509
         }
       ],
       "api": {
-        "requests": 19,
-        "reserved_usd": 0.059375,
+        "requests": 20,
+        "reserved_usd": 0.0625,
         "estimated_usd": 0.01393
       }
     },
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9853.27759,
-      "return_pct": -1.467,
+      "equity": 9851.898216,
+      "return_pct": -1.481,
       "halted": false,
       "closed_trades": 3,
-      "position": null,
+      "position": {
+        "side": "LONG",
+        "entry": 57891.576,
+        "stop": 56444.2866,
+        "take": 62522.90208,
+        "qty": 0.03404,
+        "opened_at": "2026-11-21T07:00:00+00:00"
+      },
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -1116,16 +1127,42 @@
         {
           "time": "2026-11-21T06:00:00+00:00",
           "equity": 9853.2776
+        },
+        {
+          "time": "2026-11-21T07:00:00+00:00",
+          "equity": 9853.2776
         }
       ],
       "api": {
-        "requests": 19,
-        "reserved_usd": 0.19475,
-        "estimated_usd": 0.051663
+        "requests": 20,
+        "reserved_usd": 0.205,
+        "estimated_usd": 0.054418
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-21T08:52:47+00:00",
+      "bar": "2026-11-21T07:00:00+00:00",
+      "action": "LONG",
+      "status": "AI_RESPONSE",
+      "reason": "Price recovered 3.6% from 55076 low to 57880 close in last hour. Volume increased significantly. After sharp 4-hour selloff from 61700 to 55076, bounce shows potential reversal. Ri",
+      "stop_pct": 0.025,
+      "take_pct": 0.08,
+      "reference_price": 57880.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-21T08:52:47+00:00",
+      "bar": "2026-11-21T07:00:00+00:00",
+      "action": "HOLD",
+      "status": "API_ERROR",
+      "reason": "API error; fail closed",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 57880.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-21T04:52:47+00:00",
