@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-21T18:52:48+00:00",
+  "updated_utc": "2026-11-21T19:52:48+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 59965.0,
-    "closed_bar": "2026-11-21T17:00:00+00:00"
+    "price": 60045.0,
+    "closed_bar": "2026-11-21T18:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10251.24842,
-      "return_pct": 2.512,
+      "equity": 10254.7485,
+      "return_pct": 2.547,
       "halted": false,
       "closed_trades": 7,
       "position": {
@@ -611,6 +611,10 @@
         {
           "time": "2026-11-21T17:00:00+00:00",
           "equity": 10251.2481
+        },
+        {
+          "time": "2026-11-21T18:00:00+00:00",
+          "equity": 10254.7482
         }
       ],
       "api": {
@@ -1210,6 +1214,10 @@
         },
         {
           "time": "2026-11-21T17:00:00+00:00",
+          "equity": 9916.7227
+        },
+        {
+          "time": "2026-11-21T18:00:00+00:00",
           "equity": 9916.7227
         }
       ],
