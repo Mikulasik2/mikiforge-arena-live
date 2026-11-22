@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-22T02:52:47+00:00",
+  "updated_utc": "2026-11-22T03:52:47+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 59988.0,
-    "closed_bar": "2026-11-22T01:00:00+00:00"
+    "price": 59368.0,
+    "closed_bar": "2026-11-22T02:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10251.991764,
-      "return_pct": 2.52,
+      "equity": 10224.866144,
+      "return_pct": 2.249,
       "halted": false,
       "closed_trades": 7,
       "position": {
@@ -643,6 +643,10 @@
         {
           "time": "2026-11-22T01:00:00+00:00",
           "equity": 10251.9914
+        },
+        {
+          "time": "2026-11-22T02:00:00+00:00",
+          "equity": 10224.8659
         }
       ],
       "api": {
@@ -654,18 +658,11 @@
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9900.035297,
-      "return_pct": -1.0,
+      "equity": 9862.877705,
+      "return_pct": -1.371,
       "halted": false,
-      "closed_trades": 4,
-      "position": {
-        "side": "LONG",
-        "entry": 60256.0488,
-        "stop": 59352.208068,
-        "take": 65076.532704,
-        "qty": 0.054859,
-        "opened_at": "2026-11-21T19:00:00+00:00"
-      },
+      "closed_trades": 5,
+      "position": null,
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -1282,6 +1279,10 @@
         {
           "time": "2026-11-22T01:00:00+00:00",
           "equity": 9900.0354
+        },
+        {
+          "time": "2026-11-22T02:00:00+00:00",
+          "equity": 9862.8777
         }
       ],
       "api": {
@@ -1822,6 +1823,16 @@
     }
   ],
   "trades": [
+    {
+      "agent": "claude",
+      "side": "LONG",
+      "open_time": "2026-11-21T19:00:00+00:00",
+      "close_time": "2026-11-22T02:00:00+00:00",
+      "entry": 60256.0488,
+      "exit": 59340.337626,
+      "net_pnl": -53.515268,
+      "reason": "STOP"
+    },
     {
       "agent": "claude",
       "side": "LONG",
