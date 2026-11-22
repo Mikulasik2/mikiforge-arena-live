@@ -2112,5 +2112,15 @@
       "net_pnl": -55.035422,
       "reason": "STOP"
     }
-  ]
+  ],
+  "shadow_market_v07": {
+    "status": "STALE",
+    "engine": "SHADOW_MARKET_ONLY",
+    "contract": "PF_XBTUSD",
+    "interval_minutes": 15,
+    "last_closed_bar_utc": "2026-11-22T14:00:00+00:00",
+    "trading_enabled": false,
+    "ai_calls_enabled": false,
+    "account_pnl_available": false
+  }
 }
