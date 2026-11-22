@@ -18,9 +18,9 @@
      "CLOSED": 0,
      "EXPIRED": 0,
      "FILLED": 0,
-     "HOLD_NO_ORDER": 0,
+     "HOLD_NO_ORDER": 1,
      "NO_POSITION_TO_CLOSE": 0,
-     "PENDING": 1,
+     "PENDING": 0,
      "REJECTED": 0
     }
    },
@@ -1220,6 +1220,18 @@
     {
      "equity": 10000.0,
      "t": "2026-11-22T20:00:00Z"
+    },
+    {
+     "equity": 10000.0,
+     "t": "2026-11-22T20:15:00Z"
+    },
+    {
+     "equity": 10000.0,
+     "t": "2026-11-22T20:30:00Z"
+    },
+    {
+     "equity": 10000.0,
+     "t": "2026-11-22T20:45:00Z"
     }
    ],
    "equity_usd": 10000.0,
@@ -1231,7 +1243,7 @@
     "eligible_execution_at": "2026-11-22T20:30:00Z",
     "executed_at": null,
     "received_at": "2026-11-22T20:17:01Z",
-    "status": "PENDING"
+    "status": "HOLD_NO_ORDER"
    },
    "model": "claude-haiku-4-5-20251001",
    "open_position": null,
@@ -1258,9 +1270,9 @@
      "CLOSED": 0,
      "EXPIRED": 0,
      "FILLED": 0,
-     "HOLD_NO_ORDER": 0,
+     "HOLD_NO_ORDER": 1,
      "NO_POSITION_TO_CLOSE": 0,
-     "PENDING": 1,
+     "PENDING": 0,
      "REJECTED": 0
     }
    },
@@ -2460,6 +2472,18 @@
     {
      "equity": 10000.0,
      "t": "2026-11-22T20:00:00Z"
+    },
+    {
+     "equity": 10000.0,
+     "t": "2026-11-22T20:15:00Z"
+    },
+    {
+     "equity": 10000.0,
+     "t": "2026-11-22T20:30:00Z"
+    },
+    {
+     "equity": 10000.0,
+     "t": "2026-11-22T20:45:00Z"
     }
    ],
    "equity_usd": 10000.0,
@@ -2471,7 +2495,7 @@
     "eligible_execution_at": "2026-11-22T20:30:00Z",
     "executed_at": null,
     "received_at": "2026-11-22T20:16:59Z",
-    "status": "PENDING"
+    "status": "HOLD_NO_ORDER"
    },
    "model": "gpt-5-mini",
    "open_position": null,
@@ -2481,43 +2505,49 @@
    "trades": []
   }
  },
+ "automation": {
+  "ai_scheduler": "DISABLED",
+  "last_dashboard_publication_at": "2026-11-22T21:14:51Z",
+  "last_successful_market_update_at": "2026-11-22T21:12:17Z",
+  "market_runner_status": "OK"
+ },
  "cycles": {
   "completed": {
-   "COMPLETE": 0,
+   "COMPLETE": 1,
    "NO_VALID_DECISIONS": 0,
    "PARTIAL": 0
   },
   "current": {
    "number": 1,
-   "outcome": null,
-   "phase": "AWAITING_ELIGIBLE_BAR",
+   "outcome": "COMPLETE",
+   "phase": "CYCLE_COMPLETED",
    "providers": {
-    "claude": "AWAITING_ELIGIBLE_BAR",
-    "gpt": "AWAITING_ELIGIBLE_BAR"
+    "claude": "PAPER_EXECUTED",
+    "gpt": "PAPER_EXECUTED"
    },
    "started_at": "2026-11-22T20:16:54Z"
   },
-  "fair_comparison_cycles": 0,
-  "pending": 1,
+  "fair_comparison_cycles": 1,
+  "pending": 0,
   "total": 1
  },
  "data_kind": "LIVE_AI_PAPER",
  "disclaimer": "SIMULATED PAPER TRADING - NO REAL FUNDS OR EXCHANGE ORDERS",
  "engine": {
   "scheduler": "MANUAL_ONLY",
-  "status": "WAITING_FOR_NEW_BAR"
+  "status": "IDLE"
  },
  "equity_history_source": "RECORDED_PAPER_EQUITY_PER_PROCESSED_15M_BAR",
  "experiment": "exp-5e4c9c1acbc2",
- "generated_at": "2026-11-22T20:40:39Z",
+ "generated_at": "2026-11-22T21:14:51Z",
  "market": {
   "contract": "PF_XBTUSD",
   "last_observation_at": "2026-11-22T20:15:00Z",
-  "last_processed_candle_close": "2026-11-22T20:15:00Z",
-  "last_processed_candle_open": "2026-11-22T20:00:00Z",
+  "last_processed_candle_close": "2026-11-22T21:00:00Z",
+  "last_processed_candle_open": "2026-11-22T20:45:00Z",
   "timeframe": "15m",
   "venue": "Kraken Futures"
  },
  "publishable": true,
- "schema": "mikiforge-v07-stage6f-public-v1"
+ "schema": "mikiforge-v07-stage6g-public-v2"
 }
