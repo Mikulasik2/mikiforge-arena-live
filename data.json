@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-22T20:52:47+00:00",
+  "updated_utc": "2026-11-22T21:52:47+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 60644.0,
-    "closed_bar": "2026-11-22T19:00:00+00:00"
+    "price": 60816.0,
+    "closed_bar": "2026-11-22T20:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10280.168044,
-      "return_pct": 2.802,
+      "equity": 10287.693216,
+      "return_pct": 2.877,
       "halted": false,
       "closed_trades": 7,
       "position": {
@@ -715,6 +715,10 @@
         {
           "time": "2026-11-22T19:00:00+00:00",
           "equity": 10280.1676
+        },
+        {
+          "time": "2026-11-22T20:00:00+00:00",
+          "equity": 10287.6927
         }
       ],
       "api": {
@@ -1418,6 +1422,10 @@
         },
         {
           "time": "2026-11-22T19:00:00+00:00",
+          "equity": 9848.9029
+        },
+        {
+          "time": "2026-11-22T20:00:00+00:00",
           "equity": 9848.9029
         }
       ],
@@ -2201,11 +2209,11 @@
     }
   ],
   "shadow_market_v07": {
-    "status": "STALE",
+    "status": "CURRENT",
     "engine": "SHADOW_MARKET_ONLY",
     "contract": "PF_XBTUSD",
     "interval_minutes": 15,
-    "last_closed_bar_utc": "2026-11-22T14:00:00+00:00",
+    "last_closed_bar_utc": "2026-11-22T20:45:00+00:00",
     "trading_enabled": false,
     "ai_calls_enabled": false,
     "account_pnl_available": false
