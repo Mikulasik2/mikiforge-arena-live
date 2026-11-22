@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-22T11:52:48+00:00",
+  "updated_utc": "2026-11-22T12:52:46+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 60789.0,
-    "closed_bar": "2026-11-22T10:00:00+00:00"
+    "price": 60976.0,
+    "closed_bar": "2026-11-22T11:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10286.777953,
-      "return_pct": 2.868,
+      "equity": 10294.95939,
+      "return_pct": 2.95,
       "halted": false,
       "closed_trades": 7,
       "position": {
@@ -679,22 +679,33 @@
         {
           "time": "2026-11-22T10:00:00+00:00",
           "equity": 10286.7775
+        },
+        {
+          "time": "2026-11-22T11:00:00+00:00",
+          "equity": 10294.9589
         }
       ],
       "api": {
-        "requests": 26,
-        "reserved_usd": 0.08125,
+        "requests": 27,
+        "reserved_usd": 0.084375,
         "estimated_usd": 0.01571
       }
     },
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9862.877705,
-      "return_pct": -1.371,
+      "equity": 9860.576498,
+      "return_pct": -1.394,
       "halted": false,
       "closed_trades": 5,
-      "position": null,
+      "position": {
+        "side": "LONG",
+        "entry": 60988.1952,
+        "stop": 60073.372272,
+        "take": 65867.250816,
+        "qty": 0.053906,
+        "opened_at": "2026-11-22T11:00:00+00:00"
+      },
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -1347,16 +1358,42 @@
         {
           "time": "2026-11-22T10:00:00+00:00",
           "equity": 9862.8777
+        },
+        {
+          "time": "2026-11-22T11:00:00+00:00",
+          "equity": 9862.8777
         }
       ],
       "api": {
-        "requests": 26,
-        "reserved_usd": 0.2665,
-        "estimated_usd": 0.070948
+        "requests": 27,
+        "reserved_usd": 0.27675,
+        "estimated_usd": 0.07374
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-22T12:52:46+00:00",
+      "bar": "2026-11-22T11:00:00+00:00",
+      "action": "LONG",
+      "status": "AI_RESPONSE",
+      "reason": "Strong uptrend continuation. Price recovered from 56288 low to 60976, with last 4 hours showing consistent gains (59053→61018→60789→60976). Recent momentum bullish after oversold c",
+      "stop_pct": 0.015,
+      "take_pct": 0.08,
+      "reference_price": 60976.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-22T12:52:46+00:00",
+      "bar": "2026-11-22T11:00:00+00:00",
+      "action": "HOLD",
+      "status": "API_ERROR",
+      "reason": "API error; fail closed",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 60976.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-22T08:55:04+00:00",
