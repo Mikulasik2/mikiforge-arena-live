@@ -4,12 +4,12 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-23T07:52:47+00:00",
+  "updated_utc": "2026-11-23T08:52:47+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 61385.0,
-    "closed_bar": "2026-11-23T06:00:00+00:00"
+    "price": 61376.0,
+    "closed_bar": "2026-11-23T07:00:00+00:00"
   },
   "agents": [
     {
@@ -752,19 +752,23 @@
         {
           "time": "2026-11-23T06:00:00+00:00",
           "equity": 10320.4612
+        },
+        {
+          "time": "2026-11-23T07:00:00+00:00",
+          "equity": 10320.4612
         }
       ],
       "api": {
-        "requests": 31,
-        "reserved_usd": 0.096875,
-        "estimated_usd": 0.01571
+        "requests": 32,
+        "reserved_usd": 0.1,
+        "estimated_usd": 0.017347
       }
     },
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9803.007988,
-      "return_pct": -1.97,
+      "equity": 9802.527919,
+      "return_pct": -1.975,
       "halted": false,
       "closed_trades": 7,
       "position": {
@@ -1507,16 +1511,42 @@
         {
           "time": "2026-11-23T06:00:00+00:00",
           "equity": 9803.008
+        },
+        {
+          "time": "2026-11-23T07:00:00+00:00",
+          "equity": 9802.528
         }
       ],
       "api": {
-        "requests": 31,
-        "reserved_usd": 0.31775,
-        "estimated_usd": 0.084683
+        "requests": 32,
+        "reserved_usd": 0.328,
+        "estimated_usd": 0.087532
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-23T08:52:47+00:00",
+      "bar": "2026-11-23T07:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Currently LONG at 61212.24 with take at 66109.22. Price at 61376 is near entry, showing slight upward momentum. Recent bars show strength with high volume spike at 821 contracts. S",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 61376.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-23T08:52:47+00:00",
+      "bar": "2026-11-23T07:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Price ranged after a failed push to ~62k; recent closes show only a slight pullback with no clear trend — wait for a confirmed breakout or rejection.",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 61376.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-23T04:52:47+00:00",
