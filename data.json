@@ -4,22 +4,29 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-23T19:52:47+00:00",
+  "updated_utc": "2026-11-23T20:52:47+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 61322.0,
-    "closed_bar": "2026-11-23T18:00:00+00:00"
+    "price": 61198.0,
+    "closed_bar": "2026-11-23T19:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10320.461226,
-      "return_pct": 3.205,
+      "equity": 10317.450919,
+      "return_pct": 3.175,
       "halted": false,
       "closed_trades": 8,
-      "position": null,
+      "position": {
+        "side": "SHORT",
+        "entry": 61185.7604,
+        "stop": 61919.989525,
+        "take": 58983.073026,
+        "qty": 0.070281,
+        "opened_at": "2026-11-23T19:00:00+00:00"
+      },
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -800,12 +807,16 @@
         {
           "time": "2026-11-23T18:00:00+00:00",
           "equity": 10320.4612
+        },
+        {
+          "time": "2026-11-23T19:00:00+00:00",
+          "equity": 10320.4612
         }
       ],
       "api": {
-        "requests": 34,
-        "reserved_usd": 0.10625,
-        "estimated_usd": 0.021012
+        "requests": 35,
+        "reserved_usd": 0.109375,
+        "estimated_usd": 0.022956
       }
     },
     {
@@ -1596,16 +1607,42 @@
         {
           "time": "2026-11-23T18:00:00+00:00",
           "equity": 9877.8929
+        },
+        {
+          "time": "2026-11-23T19:00:00+00:00",
+          "equity": 9877.8929
         }
       ],
       "api": {
-        "requests": 34,
-        "reserved_usd": 0.3485,
-        "estimated_usd": 0.093218
+        "requests": 35,
+        "reserved_usd": 0.35875,
+        "estimated_usd": 0.095968
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-23T20:52:47+00:00",
+      "bar": "2026-11-23T19:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Sharp rally from 61259 to 63804 (+2545) suggests strong momentum, but pullback to 61198 indicates profit-taking. Recent trades show mixed results with consecutive losses. Wait for ",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 61198.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-23T20:52:47+00:00",
+      "bar": "2026-11-23T19:00:00+00:00",
+      "action": "SHORT",
+      "status": "AI_RESPONSE",
+      "reason": "Rejection after 13:00 spike; subsequent lower highs/lows and falling closes through 15–19:00 indicate short-term bearish momentum.",
+      "stop_pct": 0.012,
+      "take_pct": 0.036,
+      "reference_price": 61198.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-23T16:52:49+00:00",
