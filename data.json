@@ -4,12 +4,12 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-23T06:52:48+00:00",
+  "updated_utc": "2026-11-23T07:52:47+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 61601.0,
-    "closed_bar": "2026-11-23T05:00:00+00:00"
+    "price": 61385.0,
+    "closed_bar": "2026-11-23T06:00:00+00:00"
   },
   "agents": [
     {
@@ -748,6 +748,10 @@
         {
           "time": "2026-11-23T05:00:00+00:00",
           "equity": 10320.4612
+        },
+        {
+          "time": "2026-11-23T06:00:00+00:00",
+          "equity": 10320.4612
         }
       ],
       "api": {
@@ -759,8 +763,8 @@
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9814.529644,
-      "return_pct": -1.855,
+      "equity": 9803.007988,
+      "return_pct": -1.97,
       "halted": false,
       "closed_trades": 7,
       "position": {
@@ -1499,6 +1503,10 @@
         {
           "time": "2026-11-23T05:00:00+00:00",
           "equity": 9814.5298
+        },
+        {
+          "time": "2026-11-23T06:00:00+00:00",
+          "equity": 9803.008
         }
       ],
       "api": {
