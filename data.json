@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-24T07:52:47+00:00",
+  "updated_utc": "2026-11-24T09:52:49+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 60406.0,
-    "closed_bar": "2026-11-24T06:00:00+00:00"
+    "price": 60183.0,
+    "closed_bar": "2026-11-24T08:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10373.54359,
-      "return_pct": 3.735,
+      "equity": 10389.640476,
+      "return_pct": 3.896,
       "halted": false,
       "closed_trades": 8,
       "position": {
@@ -855,11 +855,19 @@
         {
           "time": "2026-11-24T06:00:00+00:00",
           "equity": 10373.5435
+        },
+        {
+          "time": "2026-11-24T07:00:00+00:00",
+          "equity": 10376.7062
+        },
+        {
+          "time": "2026-11-24T08:00:00+00:00",
+          "equity": 10389.6404
         }
       ],
       "api": {
-        "requests": 37,
-        "reserved_usd": 0.115625,
+        "requests": 38,
+        "reserved_usd": 0.11875,
         "estimated_usd": 0.022956
       }
     },
@@ -1699,16 +1707,46 @@
         {
           "time": "2026-11-24T06:00:00+00:00",
           "equity": 9877.8929
+        },
+        {
+          "time": "2026-11-24T07:00:00+00:00",
+          "equity": 9877.8929
+        },
+        {
+          "time": "2026-11-24T08:00:00+00:00",
+          "equity": 9877.8929
         }
       ],
       "api": {
-        "requests": 37,
-        "reserved_usd": 0.37925,
-        "estimated_usd": 0.101408
+        "requests": 38,
+        "reserved_usd": 0.3895,
+        "estimated_usd": 0.104103
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-24T09:52:49+00:00",
+      "bar": "2026-11-24T08:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Price rejected at 60183 after sharp 1000+ point drop from 61243. Recent trades show mixed results. Volume spike during decline suggests selling pressure. Need confirmation of suppo",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 60183.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-24T09:52:49+00:00",
+      "bar": "2026-11-24T08:00:00+00:00",
+      "action": "HOLD",
+      "status": "API_ERROR",
+      "reason": "API error; fail closed",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 60183.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-24T04:52:47+00:00",
