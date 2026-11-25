@@ -4,22 +4,29 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-25T03:52:48+00:00",
+  "updated_utc": "2026-11-25T04:37:36+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 59155.0,
-    "closed_bar": "2026-11-25T02:00:00+00:00"
+    "price": 59339.0,
+    "closed_bar": "2026-11-25T03:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10471.909388,
-      "return_pct": 4.719,
+      "equity": 10470.076698,
+      "return_pct": 4.701,
       "halted": false,
       "closed_trades": 9,
-      "position": null,
+      "position": {
+        "side": "SHORT",
+        "entry": 59327.1322,
+        "stop": 60513.674844,
+        "take": 55767.504268,
+        "qty": 0.044128,
+        "opened_at": "2026-11-25T03:00:00+00:00"
+      },
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -928,12 +935,16 @@
         {
           "time": "2026-11-25T02:00:00+00:00",
           "equity": 10471.9094
+        },
+        {
+          "time": "2026-11-25T03:00:00+00:00",
+          "equity": 10471.9094
         }
       ],
       "api": {
-        "requests": 42,
-        "reserved_usd": 0.13125,
-        "estimated_usd": 0.022956
+        "requests": 43,
+        "reserved_usd": 0.134375,
+        "estimated_usd": 0.024603
       }
     },
     {
@@ -1852,16 +1863,42 @@
         {
           "time": "2026-11-25T02:00:00+00:00",
           "equity": 9823.5995
+        },
+        {
+          "time": "2026-11-25T03:00:00+00:00",
+          "equity": 9823.5995
         }
       ],
       "api": {
-        "requests": 42,
-        "reserved_usd": 0.4305,
-        "estimated_usd": 0.115201
+        "requests": 43,
+        "reserved_usd": 0.44075,
+        "estimated_usd": 0.118034
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-25T04:37:36+00:00",
+      "bar": "2026-11-25T03:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Price declined from 62839 to 59339 over 11 hours showing strong downtrend. Last 5 trades net negative (-92.14 PnL). Recent bars show consolidation around 59155-59584 with low volum",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59339.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-25T04:37:36+00:00",
+      "bar": "2026-11-25T03:00:00+00:00",
+      "action": "SHORT",
+      "status": "AI_RESPONSE",
+      "reason": "Series of lower highs and lows over the past 36+ hours; recent weak bounce lacks momentum — bias toward continuation downwards.",
+      "stop_pct": 0.02,
+      "take_pct": 0.06,
+      "reference_price": 59339.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-25T01:52:48+00:00",
