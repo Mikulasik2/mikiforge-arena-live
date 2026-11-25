@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-24T23:52:47+00:00",
+  "updated_utc": "2026-11-25T01:52:48+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 59902.0,
-    "closed_bar": "2026-11-24T22:00:00+00:00"
+    "price": 59579.0,
+    "closed_bar": "2026-11-25T00:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10409.80869,
-      "return_pct": 4.098,
+      "equity": 10432.929382,
+      "return_pct": 4.329,
       "halted": false,
       "closed_trades": 8,
       "position": {
@@ -919,11 +919,19 @@
         {
           "time": "2026-11-24T22:00:00+00:00",
           "equity": 10409.8086
+        },
+        {
+          "time": "2026-11-24T23:00:00+00:00",
+          "equity": 10420.4913
+        },
+        {
+          "time": "2026-11-25T00:00:00+00:00",
+          "equity": 10432.9293
         }
       ],
       "api": {
-        "requests": 41,
-        "reserved_usd": 0.128125,
+        "requests": 42,
+        "reserved_usd": 0.13125,
         "estimated_usd": 0.022956
       }
     },
@@ -1827,16 +1835,46 @@
         {
           "time": "2026-11-24T22:00:00+00:00",
           "equity": 9823.5995
+        },
+        {
+          "time": "2026-11-24T23:00:00+00:00",
+          "equity": 9823.5995
+        },
+        {
+          "time": "2026-11-25T00:00:00+00:00",
+          "equity": 9823.5995
         }
       ],
       "api": {
-        "requests": 41,
-        "reserved_usd": 0.42025,
-        "estimated_usd": 0.112445
+        "requests": 42,
+        "reserved_usd": 0.4305,
+        "estimated_usd": 0.115201
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-25T01:52:48+00:00",
+      "bar": "2026-11-25T00:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Price declined 2.7% from 63804 to 59579 over 36 hours in downtrend. Last 5 trades show 4 losses. No clear reversal signals yet. Wait for consolidation and confirmation before enter",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59579.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-25T01:52:48+00:00",
+      "bar": "2026-11-25T00:00:00+00:00",
+      "action": "HOLD",
+      "status": "API_ERROR",
+      "reason": "API error; fail closed",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59579.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-24T20:52:47+00:00",
