@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-27T11:52:49+00:00",
+  "updated_utc": "2026-11-27T13:52:48+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 61584.0,
-    "closed_bar": "2026-11-27T10:00:00+00:00"
+    "price": 61554.0,
+    "closed_bar": "2026-11-27T12:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10374.704114,
-      "return_pct": 3.747,
+      "equity": 10372.171634,
+      "return_pct": 3.722,
       "halted": false,
       "closed_trades": 11,
       "position": {
@@ -1159,19 +1159,27 @@
         {
           "time": "2026-11-27T10:00:00+00:00",
           "equity": 10374.704
+        },
+        {
+          "time": "2026-11-27T11:00:00+00:00",
+          "equity": 10374.1975
+        },
+        {
+          "time": "2026-11-27T12:00:00+00:00",
+          "equity": 10372.1715
         }
       ],
       "api": {
-        "requests": 56,
-        "reserved_usd": 0.175,
+        "requests": 57,
+        "reserved_usd": 0.178125,
         "estimated_usd": 0.032824
       }
     },
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9790.65043,
-      "return_pct": -2.093,
+      "equity": 9789.06046,
+      "return_pct": -2.109,
       "halted": false,
       "closed_trades": 11,
       "position": {
@@ -2314,16 +2322,46 @@
         {
           "time": "2026-11-27T10:00:00+00:00",
           "equity": 9790.6504
+        },
+        {
+          "time": "2026-11-27T11:00:00+00:00",
+          "equity": 9790.3324
+        },
+        {
+          "time": "2026-11-27T12:00:00+00:00",
+          "equity": 9789.0604
         }
       ],
       "api": {
-        "requests": 56,
-        "reserved_usd": 0.574,
-        "estimated_usd": 0.15462
+        "requests": 57,
+        "reserved_usd": 0.58425,
+        "estimated_usd": 0.157434
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-27T13:52:48+00:00",
+      "bar": "2026-11-27T12:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "LONG position active at 61592.32. Price near entry (61554 close). Stop at 60668.43 provides 1.49% protection. Recent volatility high (spike to 61988 then pullback). Wait for cleare",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 61554.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-27T13:52:48+00:00",
+      "bar": "2026-11-27T12:00:00+00:00",
+      "action": "HOLD",
+      "status": "API_ERROR",
+      "reason": "API error; fail closed",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 61554.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-27T08:52:47+00:00",
