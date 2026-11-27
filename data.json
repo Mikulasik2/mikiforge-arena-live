@@ -4,12 +4,12 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-27T15:52:47+00:00",
+  "updated_utc": "2026-11-27T16:52:47+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 59148.0,
-    "closed_bar": "2026-11-27T14:00:00+00:00"
+    "price": 60046.0,
+    "closed_bar": "2026-11-27T15:00:00+00:00"
   },
   "agents": [
     {
@@ -1168,12 +1168,16 @@
         {
           "time": "2026-11-27T14:00:00+00:00",
           "equity": 10299.8463
+        },
+        {
+          "time": "2026-11-27T15:00:00+00:00",
+          "equity": 10299.8463
         }
       ],
       "api": {
-        "requests": 57,
-        "reserved_usd": 0.178125,
-        "estimated_usd": 0.032824
+        "requests": 58,
+        "reserved_usd": 0.18125,
+        "estimated_usd": 0.034519
       }
     },
     {
@@ -2332,16 +2336,42 @@
         {
           "time": "2026-11-27T14:00:00+00:00",
           "equity": 9739.8755
+        },
+        {
+          "time": "2026-11-27T15:00:00+00:00",
+          "equity": 9739.8755
         }
       ],
       "api": {
-        "requests": 57,
-        "reserved_usd": 0.58425,
-        "estimated_usd": 0.157434
+        "requests": 58,
+        "reserved_usd": 0.5945,
+        "estimated_usd": 0.160154
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-27T16:52:47+00:00",
+      "bar": "2026-11-27T15:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Sharp 3.8% drop in last hour from 61393 to 59148, followed by recovery to 60046. High volatility and recent losing streak suggest waiting for clearer direction and stabilization be",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 60046.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-27T16:52:47+00:00",
+      "bar": "2026-11-27T15:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "High-volume flash sell-off at 14:00 with large range and only partial rebound at 15:00; direction uncertain, wait for confirmation.",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 60046.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-27T13:52:48+00:00",
