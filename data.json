@@ -4,12 +4,12 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-26T23:52:46+00:00",
+  "updated_utc": "2026-11-27T00:06:33+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 60474.0,
-    "closed_bar": "2026-11-26T22:00:00+00:00"
+    "price": 60504.0,
+    "closed_bar": "2026-11-26T23:00:00+00:00"
   },
   "agents": [
     {
@@ -1104,29 +1104,26 @@
         {
           "time": "2026-11-26T22:00:00+00:00",
           "equity": 10358.3361
+        },
+        {
+          "time": "2026-11-26T23:00:00+00:00",
+          "equity": 10358.3361
         }
       ],
       "api": {
-        "requests": 53,
-        "reserved_usd": 0.165625,
-        "estimated_usd": 0.029545
+        "requests": 54,
+        "reserved_usd": 0.16875,
+        "estimated_usd": 0.03109
       }
     },
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9793.715036,
-      "return_pct": -2.063,
+      "equity": 9793.049715,
+      "return_pct": -2.07,
       "halted": false,
-      "closed_trades": 10,
-      "position": {
-        "side": "LONG",
-        "entry": 60657.129,
-        "stop": 59747.272065,
-        "take": 63083.41416,
-        "qty": 0.053885,
-        "opened_at": "2026-11-26T11:00:00+00:00"
-      },
+      "closed_trades": 11,
+      "position": null,
       "curve": [
         {
           "time": "2026-11-15T16:00:00+00:00",
@@ -2211,16 +2208,42 @@
         {
           "time": "2026-11-26T22:00:00+00:00",
           "equity": 9793.715
+        },
+        {
+          "time": "2026-11-26T23:00:00+00:00",
+          "equity": 9795.3316
         }
       ],
       "api": {
-        "requests": 53,
-        "reserved_usd": 0.54325,
-        "estimated_usd": 0.146157
+        "requests": 54,
+        "reserved_usd": 0.5535,
+        "estimated_usd": 0.148993
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-27T00:06:33+00:00",
+      "bar": "2026-11-26T23:00:00+00:00",
+      "action": "CLOSE",
+      "status": "AI_RESPONSE",
+      "reason": "LONG position underwater at 60504 vs entry 60657. Recent bars show consolidation with downside wicks. Last 5 trades mostly negative (-13.97, -53.15, -54.29, -18.06). Risk/reward un",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 60504.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-27T00:06:33+00:00",
+      "bar": "2026-11-26T23:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "1h bars show consolidation around 60.4–60.9k with no clear breakout or trend since 2026-11-26; avoid initiating a new position.",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 60504.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-26T20:52:47+00:00",
@@ -3389,6 +3412,16 @@
     }
   ],
   "trades": [
+    {
+      "agent": "claude",
+      "side": "LONG",
+      "open_time": "2026-11-26T11:00:00+00:00",
+      "close_time": "2026-11-26T23:00:00+00:00",
+      "entry": 60657.129,
+      "exit": 60491.8992,
+      "net_pnl": -12.167484,
+      "reason": "AGENT_CLOSE"
+    },
     {
       "agent": "gpt",
       "side": "LONG",
