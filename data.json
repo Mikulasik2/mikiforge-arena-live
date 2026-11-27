@@ -4,12 +4,12 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-27T19:52:47+00:00",
+  "updated_utc": "2026-11-27T20:52:47+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 59860.0,
-    "closed_bar": "2026-11-27T18:00:00+00:00"
+    "price": 59852.0,
+    "closed_bar": "2026-11-27T19:00:00+00:00"
   },
   "agents": [
     {
@@ -1184,12 +1184,16 @@
         {
           "time": "2026-11-27T18:00:00+00:00",
           "equity": 10299.8463
+        },
+        {
+          "time": "2026-11-27T19:00:00+00:00",
+          "equity": 10299.8463
         }
       ],
       "api": {
-        "requests": 58,
-        "reserved_usd": 0.18125,
-        "estimated_usd": 0.034519
+        "requests": 59,
+        "reserved_usd": 0.184375,
+        "estimated_usd": 0.036391
       }
     },
     {
@@ -2364,16 +2368,42 @@
         {
           "time": "2026-11-27T18:00:00+00:00",
           "equity": 9739.8755
+        },
+        {
+          "time": "2026-11-27T19:00:00+00:00",
+          "equity": 9739.8755
         }
       ],
       "api": {
-        "requests": 58,
-        "reserved_usd": 0.5945,
-        "estimated_usd": 0.160154
+        "requests": 59,
+        "reserved_usd": 0.60475,
+        "estimated_usd": 0.162884
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-27T20:52:47+00:00",
+      "bar": "2026-11-27T19:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Sharp 3.4% crash at 14:00 UTC from 61393 to 59148 suggests exhausted buying pressure. Recent trades show consecutive losses. Wait for stabilization and bullish confirmation before ",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59852.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-27T20:52:47+00:00",
+      "bar": "2026-11-27T19:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "High-volume selloff at 14:00 then choppy consolidation around 59.8k. No clear trend or breakout on closed bars—wait for confirmation.",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59852.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-27T16:52:47+00:00",
