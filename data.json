@@ -4,19 +4,19 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-27T09:52:48+00:00",
+  "updated_utc": "2026-11-27T10:52:47+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 61650.0,
-    "closed_bar": "2026-11-27T08:00:00+00:00"
+    "price": 61553.0,
+    "closed_bar": "2026-11-27T09:00:00+00:00"
   },
   "agents": [
     {
       "id": "gpt",
       "name": "GPT-5 mini",
-      "equity": 10380.27557,
-      "return_pct": 3.803,
+      "equity": 10372.087218,
+      "return_pct": 3.721,
       "halted": false,
       "closed_trades": 11,
       "position": {
@@ -1151,6 +1151,10 @@
         {
           "time": "2026-11-27T08:00:00+00:00",
           "equity": 10380.2754
+        },
+        {
+          "time": "2026-11-27T09:00:00+00:00",
+          "equity": 10372.0871
         }
       ],
       "api": {
@@ -1162,8 +1166,8 @@
     {
       "id": "claude",
       "name": "Claude Haiku 4.5",
-      "equity": 9794.148364,
-      "return_pct": -2.059,
+      "equity": 9789.007461,
+      "return_pct": -2.11,
       "halted": false,
       "closed_trades": 11,
       "position": {
@@ -2298,6 +2302,10 @@
         {
           "time": "2026-11-27T08:00:00+00:00",
           "equity": 9794.1484
+        },
+        {
+          "time": "2026-11-27T09:00:00+00:00",
+          "equity": 9789.0074
         }
       ],
       "api": {
