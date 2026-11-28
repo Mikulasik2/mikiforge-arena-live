@@ -4,12 +4,12 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-27T23:52:54+00:00",
+  "updated_utc": "2026-11-28T00:52:45+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 59670.0,
-    "closed_bar": "2026-11-27T22:00:00+00:00"
+    "price": 59870.0,
+    "closed_bar": "2026-11-27T23:00:00+00:00"
   },
   "agents": [
     {
@@ -1200,11 +1200,15 @@
         {
           "time": "2026-11-27T22:00:00+00:00",
           "equity": 10299.8463
+        },
+        {
+          "time": "2026-11-27T23:00:00+00:00",
+          "equity": 10299.8463
         }
       ],
       "api": {
-        "requests": 59,
-        "reserved_usd": 0.184375,
+        "requests": 60,
+        "reserved_usd": 0.1875,
         "estimated_usd": 0.036391
       }
     },
@@ -2396,16 +2400,42 @@
         {
           "time": "2026-11-27T22:00:00+00:00",
           "equity": 9739.8755
+        },
+        {
+          "time": "2026-11-27T23:00:00+00:00",
+          "equity": 9739.8755
         }
       ],
       "api": {
-        "requests": 59,
-        "reserved_usd": 0.60475,
-        "estimated_usd": 0.162884
+        "requests": 60,
+        "reserved_usd": 0.615,
+        "estimated_usd": 0.165694
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-28T00:52:45+00:00",
+      "bar": "2026-11-27T23:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Sharp -2300 point drop at 14:00 UTC followed by recovery to 59870. Price stabilized near 59700-59900 range last 9 hours. Recent trade history shows net losses (avg -10.9 per trade)",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59870.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-28T00:52:45+00:00",
+      "bar": "2026-11-27T23:00:00+00:00",
+      "action": "HOLD",
+      "status": "API_ERROR",
+      "reason": "API error; fail closed",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59870.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-27T20:52:47+00:00",
