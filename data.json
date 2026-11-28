@@ -4,12 +4,12 @@
   "status": "RUNNING",
   "started_utc": "2026-11-15T17:52:22+00:00",
   "ends_utc": "2026-12-15T17:52:22+00:00",
-  "updated_utc": "2026-11-28T03:52:47+00:00",
+  "updated_utc": "2026-11-28T04:52:46+00:00",
   "market": {
     "symbol": "BTCUSD",
     "source": "kraken_futures:PF_XBTUSD",
-    "price": 59903.0,
-    "closed_bar": "2026-11-28T02:00:00+00:00"
+    "price": 59959.0,
+    "closed_bar": "2026-11-28T03:00:00+00:00"
   },
   "agents": [
     {
@@ -1216,12 +1216,16 @@
         {
           "time": "2026-11-28T02:00:00+00:00",
           "equity": 10299.8463
+        },
+        {
+          "time": "2026-11-28T03:00:00+00:00",
+          "equity": 10299.8463
         }
       ],
       "api": {
-        "requests": 60,
-        "reserved_usd": 0.1875,
-        "estimated_usd": 0.036391
+        "requests": 61,
+        "reserved_usd": 0.190625,
+        "estimated_usd": 0.037891
       }
     },
     {
@@ -2428,16 +2432,42 @@
         {
           "time": "2026-11-28T02:00:00+00:00",
           "equity": 9739.8755
+        },
+        {
+          "time": "2026-11-28T03:00:00+00:00",
+          "equity": 9739.8755
         }
       ],
       "api": {
-        "requests": 60,
-        "reserved_usd": 0.615,
-        "estimated_usd": 0.165694
+        "requests": 61,
+        "reserved_usd": 0.62525,
+        "estimated_usd": 0.168554
       }
     }
   ],
   "decisions": [
+    {
+      "agent": "claude",
+      "timestamp": "2026-11-28T04:52:46+00:00",
+      "bar": "2026-11-28T03:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Price recovered to 59959 after sharp 2245-point drop from 61393 on 2026-11-27T14:00. Recent bars show consolidation with low volatility (58-82 volume). Last 5 trades net negative (",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59959.0
+    },
+    {
+      "agent": "gpt",
+      "timestamp": "2026-11-28T04:52:46+00:00",
+      "bar": "2026-11-28T03:00:00+00:00",
+      "action": "HOLD",
+      "status": "AI_RESPONSE",
+      "reason": "Consolidation after a sharp intraday sell-off; price range-bound near 59.9k with low directional conviction—avoid opening a new trade.",
+      "stop_pct": 0.015,
+      "take_pct": 0.03,
+      "reference_price": 59959.0
+    },
     {
       "agent": "claude",
       "timestamp": "2026-11-28T00:52:45+00:00",
